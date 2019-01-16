@@ -1,0 +1,45 @@
+{
+  "name": "rct-day-picker-range-component",
+  "version": "1.46.3",
+  "description": "Component for the day picker range controller",
+  "main": "dist/index.js",
+  "ng:main": "dist/index.ng.js",
+  "src:module": "src/index.js",
+  "src:ng:module": "src/index.ng.js",
+  "bugs": {
+    "url": "https://gitlab.com/adventurebucketlist/react-packages/issues"
+  },
+  "homepage": "https://gitlab.com/adventurebucketlist/react-packages/tree/master/packages/rct-day-picker-range-component#README",
+  "keywords": [],
+  "author": "Geraldine Starke <geraldine@starke.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.x",
+    "debug": "^3.x",
+    "enzyme": "^3.x",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "mobx": "^3.x",
+    "mobx-react": "^4.x",
+    "moment": "^2.x",
+    "prop-types": "^15.x",
+    "react": "^16.x",
+    "react-dates": "16.2.1",
+    "react-dom": "^16.x",
+    "react-router-dom": "^4.x",
+    "react-test-renderer": "^16.x",
+    "react2angular": "3.x",
+    "typeface-roboto": "^0.x"
+  },
+  "devDependencies": {
+    "@4geit/rct-common-store": "^1.x",
+    "@4geit/rct-swagger-client-store": "^1.x",
+    "@storybook/addon-centered": "^3.x",
+    "@storybook/addon-info": "^3.x",
+    "@storybook/addon-storyshots": "^3.x",
+    "@storybook/react": "^3.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
