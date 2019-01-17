@@ -2,9 +2,32 @@ const path = require('path')
 const glob = require('glob')
 // eslint-disable-next-line no-unused-vars
 const webpack = require('webpack')
-const vendors = require('./packages/rct-ng-vendor/vendors')
+const vendors = module.exports = [
+  '@4geit/rct-common-store',
+  '@4geit/rct-notification-menu-component',
+  '@4geit/rct-notification-menu-store',
+  '@4geit/rct-notification-store',
+  '@4geit/rct-swagger-client-store',
+  'debug',
+  'enzyme',
+  'material-ui',
+  'material-ui-icons',
+  'mobx',
+  'mobx-react',
+  'moment',
+  'prop-types',
+  'rc-slider',
+  'react',
+  'react-addons-shallow-compare',
+  // 'react-dates',
+  'react-dom',
+  'react-router-dom',
+  'react-test-renderer',
+  'react2angular',
+]
 
-const PACKAGES_DIR = path.resolve(__dirname, './packages')
+
+const PACKAGES_DIR = path.resolve(__dirname, './')
 
 // provide the package name
 function getPackageName(file) {
@@ -30,7 +53,7 @@ module.exports = {
   // output setup
   output: {
     path: path.resolve(__dirname),
-    filename: './packages/[name]/dist/index.ng.js',
+    filename: './dist/index.ng.js',
     libraryTarget: 'umd',
   },
   plugins: [

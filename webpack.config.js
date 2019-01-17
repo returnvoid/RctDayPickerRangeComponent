@@ -4,7 +4,7 @@ const glob = require('glob')
 const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
 
-const PACKAGES_DIR = path.resolve(__dirname, './packages')
+const PACKAGES_DIR = path.resolve(__dirname, './')
 
 function getPackageName(file) {
   return path.relative(PACKAGES_DIR, file).split(path.sep)[0]
@@ -25,7 +25,7 @@ module.exports = {
   entry: entries,
   output: {
     path: path.resolve(__dirname),
-    filename: './packages/[name]/dist/index.js',
+    filename: './[name]/dist/index.js',
     libraryTarget: 'umd',
   },
   // we define here the devtool used to build the source map very useful
