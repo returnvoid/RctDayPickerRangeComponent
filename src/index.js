@@ -6,7 +6,7 @@ import 'react-dates/lib/css/_datepicker.css';
 
 import { DateRangePicker } from 'react-dates';
 
-class App extends Component {
+class DayPicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="DayPicker">
         <DateRangePicker
           startDateId="startDate"
           endDateId="endDate"
@@ -33,4 +33,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default DayPicker;
